@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+  /* background-color: red; */
+}
+
+/* header */
+
+
+.logo-image{
+  /* z-index: 1; */
+  position: absolute;
+  width: 10%;
+  border-radius: 100%;
+}
+header{
+  padding: 60px;
+  border-bottom:#000 3px solid;
+  background: url("../media/header.jpg") no-repeat 0 -600px;
+  background-attachment: scroll;
+  background-size: cover;
+  position: relative;
+  min-height: 150px;
+}
+header-title{
+  float: left;
+  position: absolute;
+  margin-bottom: 150px;
+
+}
+header h1{
+  width: 50%;
+}
+nav{
+  float:right;
+  text-transform: uppercase;
+  color: black;
+  margin-top: 60px;
+  font-weight: bold;
+}
+nav ul{
+text-decoration: none;
+list-style-type: none;
+}
+
+nav li{
+  display: inline;
+  padding: 0 20px 0 20px;
+  margin-bottom: 30px;
+
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+header a:hover{
+  color:white;
+  font-weight:bold;
+  font-size: 26px;
+}
+
+#container{
+  margin: 5% 15%;
+}
+
+.image{
+  width: 10%;
+}
+.phpcode{
+  float:right;
+}
+.products{
+  display: inline-block;
+}
+
+#palaute{
+  min-height: 800px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .logo-image{
+    width: 40%;
+    align-items: center;
+  }
+}
+
+/* footer */
+
+
+footer{
+  background-color: red;
+  padding: 30px;
+  /* text-align: center;
+  position: relative; */
+}
+.foocontainer{
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+.foo{
+  width: 30%;
+  float: left;
+}
+.foo h3{
+  margin: 10px 0;
+  color: #393e46;
+}
+.foo em{
+  color: white;
+  margin-top: 15px;
+}
+.copyright{
+  text-align: center;
+  padding: 20px 10px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .foo{
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Palaute */
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 0px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 10px;
+}
+
+/* Style the container */
+.formcontainer {
+  border-radius: 5px;
+  background-color: #EEEEEE;
+  padding: 20px;
+  width: 60%;
+  margin: auto;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .formcontainer {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .col-25 {
+   text-align: left;
+  }
+}
